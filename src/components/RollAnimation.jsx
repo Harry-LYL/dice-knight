@@ -26,7 +26,7 @@ export default function RollAnimation() {
       className="fixed inset-0 z-50 bg-black flex items-center justify-center"
     >
       <video
-        src="/assets/roll.mp4"
+        src={`${import.meta.env.BASE_URL}assets/roll.mp4`}
         autoPlay
         muted
         playsInline

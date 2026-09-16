@@ -27,7 +27,7 @@ function BossCarousel() {
     <div className="relative">
       <div className="flex flex-col md:flex-row gap-0 bg-[#0d0d0d] border border-[#222] rounded-xl overflow-hidden">
         <div className="w-full md:w-56 shrink-0 bg-black flex items-center justify-center" style={{ minHeight: '280px' }}>
-          <video key={b.fileName} src={`/assets/idle/${b.fileName}.mp4`} autoPlay loop muted playsInline className="w-full h-full object-cover" style={{ maxHeight: '320px' }} />
+          <video key={b.fileName} src={`${import.meta.env.BASE_URL}assets/idle/${b.fileName}.mp4`} autoPlay loop muted playsInline className="w-full h-full object-cover" style={{ maxHeight: '320px' }} />
         </div>
         <div className="flex-1 p-6 flex flex-col justify-between">
           <div>
@@ -64,7 +64,7 @@ export default function HomeScreen() {
       {/* Hero */}
       <section
         className="min-h-screen flex flex-col items-center justify-center text-center px-8 py-20 relative border-b border-[#1a1a1a]"
-        style={{ backgroundImage: "url('/assets/opening.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/opening.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 bg-black/70 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#080808] pointer-events-none" />
@@ -83,7 +83,7 @@ export default function HomeScreen() {
             <a href="#design" className="px-10 py-3.5 border border-[#666] text-[#ccc] text-sm tracking-[0.2em] rounded-lg hover:border-[#999] hover:text-white transition-all cursor-pointer flex items-center">查看设计思路 ↓</a>
           </div>
           <p className="text-[#777] text-xs tracking-widest mt-6" style={{ fontFamily: 'Cinzel, serif' }}>✦ DICE · STRATEGY · GLORY ✦</p>
-          <p className="text-[#ccc] text-sm font-semibold tracking-[0.3em] mt-2" style={{ fontFamily: FONT }}>独立游戏作者：丛中笑</p>
+          <p className="text-[#ccc] text-sm font-semibold tracking-[0.3em] mt-2" style={{ fontFamily: FONT }}>独立游戏作者：李彦龙</p>
         </div>
       </section>
 

@@ -60,7 +60,7 @@ export default function BossCard({ boss }) {
         style={{ background: '#111' }}
       >
         <img
-          src={`/assets/cards/${boss.fileName}.JPG`}
+          src={`${import.meta.env.BASE_URL}assets/cards/${boss.fileName}.JPG`}
           alt={boss.name}
           className="w-full h-full object-cover grayscale"
           style={{ objectPosition: boss.imagePosition || 'center top' }}

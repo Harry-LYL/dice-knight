@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useGame } from '../context/GameContext';
 
 const DEFEAT_SLIDES = [
-  { src: '/assets/defeat/defeat1.JPG', duration: 1000 },
-  { src: '/assets/defeat/defeat2.JPG', duration: 1000 },
+  { src: `${import.meta.env.BASE_URL}assets/defeat/defeat1.JPG`, duration: 1000 },
+  { src: `${import.meta.env.BASE_URL}assets/defeat/defeat2.JPG`, duration: 1000 },
   { src: null, duration: null },
 ];
 

@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useGame } from '../context/GameContext';
 
 function getVideoUrl(folder, fileName) {
-  return `/assets/${folder}/${fileName}.mp4`;
+  return `${import.meta.env.BASE_URL}assets/${folder}/${fileName}.mp4`;
 }
 
 export default function LeftPanel({ onVideoEnd }) {
@@ -16,7 +16,7 @@ export default function LeftPanel({ onVideoEnd }) {
         ? { src: getVideoUrl('hurt', f), video: true }
         : leftPanelMode === 'boss-attack' && f
           ? { src: getVideoUrl('attack', f), video: true }
-          : { src: '/assets/idle/default.jpg', video: false };
+          : { src: `${import.meta.env.BASE_URL}assets/idle/default.jpg`, video: false };
 
   const currentSrc = media.src;
 

@@ -20,13 +20,13 @@ export default function OpeningScreen() {
   return (
     <div className="fixed inset-0 z-50 bg-black cursor-pointer" onClick={() => act('OPEN_ANIM_DONE')}>
       <img
-        src="/assets/opening2.jpg"
+        src={`${import.meta.env.BASE_URL}assets/opening2.jpg`}
         alt="opening2"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ opacity: op1, transition: `opacity ${FADE_MS}ms ease` }}
       />
       <img
-        src="/assets/opening.jpg"
+        src={`${import.meta.env.BASE_URL}assets/opening.jpg`}
         alt="opening"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ opacity: op2, transition: `opacity ${FADE_MS}ms ease` }}
